@@ -1,0 +1,4 @@
+apiVersion: "blahblah"
+kind: "tes"
+metadata:
+  name: default
