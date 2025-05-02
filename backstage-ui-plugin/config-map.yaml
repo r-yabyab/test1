@@ -3,5 +3,7 @@ kind: ConfigMap
 metadata:
   name: default
   namespace: example
+  labels:
+    app.kubernetes.io/name: backstage
 data:
   sdfsdfsd: sdfsdfd
