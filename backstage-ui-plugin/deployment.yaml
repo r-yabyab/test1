@@ -6,7 +6,7 @@ metadata: # kpt-merge: example/backstage
   labels:
     app.kubernetes.io/name: backstage
   annotations:
-    internal.kpt.dev/upstream-identifier: 'apps|Deployment|example|backstage'
+    internal.kpt.dev/upstream-identifier: apps|Deployment|example|backstage
 spec:
   replicas: 1
   template:
