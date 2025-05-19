@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata: # kpt-merge: example/echo-ingress
+  name: echo-ingress
+  namespace: example
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    internal.kpt.dev/upstream-identifier: 'networking.k8s.io|Ingress|example|echo-ingress'
+  labels:
+    app: example
+spec:
+  tls:
+  - hosts:
+    - example.pkgcatalog.xyz
+    secretName: example.tls
+  ingressClassName: nginx
+  rules:
+  - host: example.pkgcatalog.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: echo
+            port:
+              number: 80
