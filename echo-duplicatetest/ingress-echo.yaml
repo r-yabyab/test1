@@ -5,7 +5,7 @@ metadata: # kpt-merge: example/echo-ingress
   namespace: example
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    internal.kpt.dev/upstream-identifier: 'networking.k8s.io|Ingress|example|echo-ingress'
+    internal.kpt.dev/upstream-identifier: networking.k8s.io|Ingress|example|echo-ingress
   labels:
     app: example
 spec:

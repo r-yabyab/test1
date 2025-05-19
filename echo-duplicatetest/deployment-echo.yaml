@@ -6,7 +6,7 @@ metadata: # kpt-merge: example/echo
   labels:
     app: example
   annotations:
-    internal.kpt.dev/upstream-identifier: 'apps|Deployment|example|echo'
+    internal.kpt.dev/upstream-identifier: apps|Deployment|example|echo
 spec:
   selector:
     matchLabels:
