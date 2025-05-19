@@ -21,7 +21,7 @@ upstreamLock:
     ref: echo/v0
     commit: 8385529189b59e5f47893541be41e02f7652ec35
 info:
-  description: "A simple echo service test test "
+  description: 'A simple echo service test test '
 pipeline:
   mutators:
   - image: apply-replacements:v0.1.1
